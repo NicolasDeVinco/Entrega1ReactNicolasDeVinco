@@ -1,0 +1,30 @@
+.nav__container {
+  background-color: rgb(137, 137, 252);
+  height: 100px;
+  display: grid;
+  grid-template-columns: 3fr 7fr 2fr ;
+}
+
+.logo__container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+}
+
+.categorias__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+}
+
+.carrito__container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  text-align: center;
+  align-items: center;
+}

@@ -1,0 +1,14 @@
+.categoria__button {
+  background-color: green;
+  width: 10%;
+  height: 40%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.categoria__button:hover {
+  background-color: rgb(236, 235, 235);
+}

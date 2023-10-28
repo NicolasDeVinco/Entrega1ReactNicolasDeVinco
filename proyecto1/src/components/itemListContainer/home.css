@@ -1,0 +1,4 @@
+.container__general--home {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+}
