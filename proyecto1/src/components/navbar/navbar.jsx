@@ -1,9 +1,9 @@
-import { Categorias } from "./categorias"
-import { Carrito } from "./carrito"
-import { Logo } from "./logo"
-import './logo.css'
-import './categorias.css'
-import './carrito.css'
+import { Categorias } from "./Categorias"
+import { CartWidget } from "./CartWidget"
+import { Logo } from "./Logo"
+import './Logo.css'
+import './Categorias.css'
+import './CartWidget.css'
 
 
 export const Navbar = () => {
@@ -27,7 +27,7 @@ export const Navbar = () => {
             />
           </div>
           <div className="carrito__container">
-            <Carrito />
+            <CartWidget />
           </div>
         </div>
     )

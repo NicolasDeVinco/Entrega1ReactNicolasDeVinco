@@ -1,0 +1,30 @@
+.cart__widget--container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.carrito__button {
+  background-color: white;
+  width: 20%;
+  height: 40%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.carrito__button:hover {
+  background-color: rgb(224, 224, 224);
+}
+
+.icono__usuarios {
+  width: 70%;
+}
+
+.counter {
+  background-color: rgb(141, 97, 97);
+  border-radius: 10px;
+  width: 20px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}

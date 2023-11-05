@@ -1,7 +1,7 @@
 import './App.css'
-import './components/navbar/navbar.css'
-import { Navbar } from './components/navbar/navbar'
-import { Home } from './components/itemListContainer/home'
+import './components/Navbar/navbar.css'
+import { Navbar } from './components/Navbar/Navbar'
+import { ItemListContainer } from './components/ItemListContainer/ItemListContainer'
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Home />
+      <ItemListContainer greeting='BUSCÁ UNA PAREJA PARA:'/>
     </>
   )
 }

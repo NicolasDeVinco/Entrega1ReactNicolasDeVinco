@@ -1,16 +1,18 @@
-import { CardGeneral } from "./card-general"
-import { Titulos } from "./titulos"
-import './titulos.css'
-import './home.css'
-import './card-general.css'
+import { CardGeneral } from "./Card-general"
+import { Titulos } from "./Titulos"
+import './Titulos.css'
+import './ItemListContainer.css'
+import './Card-general.css'
 
 
-export const Home = () => {
+export const ItemListContainer = (props) => {
+
+    const { greeting } = props 
 
     return (
       <>
         <Titulos 
-          titulo = 'BUSCÁ UNA PERSONA PARA:'
+          titulo = { greeting }
         />
 
       <div className="container__general--home">
