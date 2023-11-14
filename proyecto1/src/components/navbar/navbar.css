@@ -9,7 +9,13 @@
   display: flex;
   text-align: center;
   align-items: center;
+}
 
+.logo__title {
+  font-weight: bold;
+  color: black;
+  font-size: 30px;
+  margin: auto;
 }
 
 .categorias__container {
@@ -19,6 +25,7 @@
   justify-content: space-evenly;
   text-align: center;
   align-items: center;
+  color: black;
 }
 
 .carrito__container {

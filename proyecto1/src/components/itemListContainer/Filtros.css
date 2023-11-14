@@ -1,0 +1,27 @@
+.filtros__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+.filtros__container:nth-child(1) {
+cursor: pointer;
+}
+
+
+.filtro__hombre,
+.filtro__mujer {
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.filtro__hombre.activo,
+.filtro__mujer.activo {
+  border-bottom: 2px solid blue; /* o el color que desees */
+}

@@ -2,3 +2,7 @@
     display: grid;
     grid-template-columns: 6fr 6fr;
 }
+
+.container__general--usuarios {
+    display: flex;
+}

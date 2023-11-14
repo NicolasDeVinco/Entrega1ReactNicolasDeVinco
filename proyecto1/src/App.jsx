@@ -2,16 +2,28 @@ import './App.css'
 import './components/Navbar/navbar.css'
 import { Navbar } from './components/Navbar/Navbar'
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer'
+import { PaginaEnProgreso } from './components/ItemListContainer/Pagina-progreso'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import { useState } from 'react'
 
 
 function App() {
- 
+
+  const [cartCount, setCartCount] = useState(0)
+
+  const handleCarrito = () => {
+    setCartCount((prevCount) => prevCount + 1)
+  }
 
   return (
-    <>
-      <Navbar />
-      <ItemListContainer greeting='BUSCÁ UNA PAREJA PARA:'/>
-    </>
+    <Router>
+      <Navbar cartCount={cartCount}/>
+      <Routes>
+        <Route path='/' element={<ItemListContainer greeting='BUSCÁ GENTE PARA:' handleCarrito={handleCarrito} /> }/>
+        <Route path='/categoria/quehacemos' element={<PaginaEnProgreso /> }/>
+        <Route path='/categoria/postulate' element={<PaginaEnProgreso /> }/>
+      </Routes>
+    </Router>
   )
 }
 

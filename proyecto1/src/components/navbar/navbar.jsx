@@ -1,33 +1,22 @@
-import { Categorias } from "./Categorias"
 import { CartWidget } from "./CartWidget"
-import { Logo } from "./Logo"
-import './Logo.css'
-import './Categorias.css'
 import './CartWidget.css'
+import { NavLink } from "react-router-dom"
 
 
-export const Navbar = () => {
+export const Navbar = ({ cartCount }) => {
     return (
         <div className="nav__container">
           <div className="logo__container">
-            <Logo 
-              titleLogo= '¡ EQUIPAZO !'
-            />
+            <NavLink className="logo__title" to='/'>¡ EQUIPAZO !</NavLink>
           </div>
 
           <div className="categorias__container">
-            <Categorias 
-              categoria='Inicio'
-              />
-            <Categorias 
-              categoria='¿Qué hacemos?'
-            />
-            <Categorias 
-              categoria='Postulate'
-            />
-          </div>
+            <NavLink className="categorias__container" to='/'>Inicio</NavLink>
+            <NavLink className="categorias__container" to='/categoria/quehacemos'>¿Qué hacemos?</NavLink>
+            <NavLink className="categorias__container" to='/categoria/postulate'>Postulate</NavLink>
+          </div>      
           <div className="carrito__container">
-            <CartWidget />
+            <CartWidget cartCount={cartCount} />
           </div>
         </div>
     )

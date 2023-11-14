@@ -1,0 +1,27 @@
+.usuarios__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+}
+
+.card__user--container {
+    border: 2px solid red;
+    border-radius: 10px;
+    width: 250px;
+    height: 320px;
+    text-align: center;
+}
+
+.card__user--title {
+    font-size: 24px;
+}
+
+.card__user--img {
+    border-radius: 50%;
+    border: 4px solid grey;
+}
+
+.vermas__button {
+    cursor: pointer;
+}

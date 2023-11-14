@@ -10,6 +10,7 @@
     margin: auto;
     font-size: 40px;
     cursor: pointer;
+    margin-top: 40px;
 }
 
 .card__general:hover {
