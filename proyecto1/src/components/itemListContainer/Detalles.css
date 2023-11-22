@@ -1,13 +1,14 @@
+.detalles__container--general {
+    margin-top: 50px;
+}
+
 .detalles__container {
     border: 2px solid blue;
     width: 500px;
     height: 370px;
-    margin: auto;
     margin-bottom: 50px;
     padding: 10px 10px;
-    justify-content: center;
-    justify-self: center;
-    justify-items: center;
+    margin: auto;
 }
 
 .detalles__title {

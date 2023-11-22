@@ -10,7 +10,7 @@ import { useParams } from "react-router-dom"
 
 export const ItemListContainer = (props) => {
   const { greeting, handleCarrito  } = props
-  const { category } = useParams();
+  const { category } = useParams()
   
   const [showUsers, setShowUsers] = useState(false)
   const [showCards, setShowCards] = useState(true)
@@ -41,8 +41,8 @@ export const ItemListContainer = (props) => {
           <div className={showUsers || showDetails ? "container__general--usuarios" : "container__general--home"}>
               {showCards ? (
                   <>
-                      <CardGeneral onClick={() => mostrarJugadores("futbol")} tituloCard='Jugar al fútbol' />
-                      <CardGeneral onClick={() => mostrarJugadores("bailar")} tituloCard='Salir a bailar' />
+                      <CardGeneral mostrarJugadores={() => mostrarJugadores("futbol")} tituloCard='Jugar al fútbol' linkCard='jugaralfutbol' />
+                      <CardGeneral mostrarJugadores={() => mostrarJugadores("bailar")} tituloCard='Salir a bailar' linkCard='salirabailar' />
                   </>
               ) : null}
               {showUsers ? <User mostrarDetalles={mostrarDetalles} categoria={selectedCategory} /> : null}

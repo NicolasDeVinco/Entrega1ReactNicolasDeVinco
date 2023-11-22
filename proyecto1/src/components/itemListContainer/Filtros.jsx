@@ -1,13 +1,13 @@
 import './Filtros.css'
-import { useState } from 'react';
+import { useState } from 'react'
 
 export const Filtros = ({ Filtrar }) => {
-    const [filtroActivo, setFiltroActivo] = useState(null);
+    const [filtroActivo, setFiltroActivo] = useState(null)
   
     const handleFiltroClick = (filtro) => {
       Filtrar(filtro);
-      setFiltroActivo(filtro);
-    };
+      setFiltroActivo(filtro)
+    }
   
     return (
       <div className="filtros__container">
@@ -24,5 +24,5 @@ export const Filtros = ({ Filtrar }) => {
           Mujer
         </div>
       </div>
-    );
-  };
+    )
+  }

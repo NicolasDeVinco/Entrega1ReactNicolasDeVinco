@@ -5,6 +5,9 @@ import { ItemListContainer } from './components/ItemListContainer/ItemListContai
 import { PaginaEnProgreso } from './components/ItemListContainer/Pagina-progreso'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import { useState } from 'react'
+import { Detalles } from './components/ItemListContainer/Detalles'
+import SalirABailar from './components/routes/SalirABailar'
+import JugarAlFutbol from './components/routes/JugarAlFutbol'
 
 
 
@@ -21,6 +24,10 @@ function App() {
       <Navbar cartCount={cartCount}/>
       <Routes>
         <Route path='/' element={<ItemListContainer greeting='BUSCÁ GENTE PARA:' handleCarrito={handleCarrito} /> }/>
+        <Route path='/jugaralfutbol' element={<JugarAlFutbol /> }/>
+        <Route path='/jugaralfutbol/:id' element={<Detalles /> }/>
+        <Route path='/salirabailar' element={<SalirABailar /> }/>
+        <Route path='/salirabailar/:id' element={<Detalles /> }/>
         <Route path="/categoria/:category" element={<ItemListContainer handleCarrito={handleCarrito} />} />
         <Route path='/categoria/quehacemos' element={<PaginaEnProgreso /> }/>
         <Route path='/categoria/postulate' element={<PaginaEnProgreso /> }/>

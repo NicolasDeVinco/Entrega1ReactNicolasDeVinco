@@ -10,11 +10,11 @@ export const User = ({ mostrarDetalles, categoria }) => {
 
 
   useEffect(() => {
-      fetch('./src/components/ItemListContainer/usuarios.json')
-          .then((response) => response.json())
-          .then((data) => setUsuarios(data))
-          .catch((error) => console.error(error))
-  }, [])
+    fetch('./src/components/ItemListContainer/usuarios.json')
+        .then((response) => response.json())
+        .then((data) => setUsuarios(data))
+        .catch((error) => console.error(error))
+}, [])
 
   const filtrarUsuarios = (tipoFiltro) => {
       setFiltro(tipoFiltro)
