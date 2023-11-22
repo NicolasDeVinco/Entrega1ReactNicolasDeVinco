@@ -7,6 +7,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import { useState } from 'react'
 
 
+
 function App() {
 
   const [cartCount, setCartCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
       <Navbar cartCount={cartCount}/>
       <Routes>
         <Route path='/' element={<ItemListContainer greeting='BUSCÁ GENTE PARA:' handleCarrito={handleCarrito} /> }/>
+        <Route path="/categoria/:category" element={<ItemListContainer handleCarrito={handleCarrito} />} />
         <Route path='/categoria/quehacemos' element={<PaginaEnProgreso /> }/>
         <Route path='/categoria/postulate' element={<PaginaEnProgreso /> }/>
       </Routes>

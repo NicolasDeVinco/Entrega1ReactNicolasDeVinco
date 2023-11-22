@@ -4,12 +4,14 @@ import './ItemListContainer.css'
 import { useState } from "react"
 import { User } from "./Card-user"
 import { Detalles } from "./Detalles"
+import { useParams } from "react-router-dom"
 
 
 
-export const ItemListContainer = (props ) => {
+export const ItemListContainer = (props) => {
   const { greeting, handleCarrito  } = props
-
+  const { category } = useParams();
+  
   const [showUsers, setShowUsers] = useState(false)
   const [showCards, setShowCards] = useState(true)
   const [showDetails, setShowDetails] = useState(false)

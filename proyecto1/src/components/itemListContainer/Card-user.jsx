@@ -3,9 +3,11 @@ import { useState, useEffect } from "react"
 import { Filtros } from "./Filtros"
 
 
+
 export const User = ({ mostrarDetalles, categoria }) => {
   const [usuarios, setUsuarios] = useState([])
   const [filtro, setFiltro] = useState(null)
+
 
   useEffect(() => {
       fetch('./src/components/ItemListContainer/usuarios.json')

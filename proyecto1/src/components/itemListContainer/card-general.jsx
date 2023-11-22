@@ -1,10 +1,10 @@
 import './Card-general.css'
+import { Link } from 'react-router-dom'
 
 export const CardGeneral = (props) => {
-
   return (
-    <div className="card__general" onClick={props.onClick}>
+    <Link to={`/categoria/${props.tituloCard.toLowerCase()}`} className="card__general">
       {props.tituloCard}
-    </div>
+    </Link>
   )
 }
